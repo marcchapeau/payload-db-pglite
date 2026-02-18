@@ -1,0 +1,6 @@
+src
+tsconfig*
+CONVENTIONS.md
+SUMMARY.md
+.gitignore
+node_modules
