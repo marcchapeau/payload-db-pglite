@@ -54,7 +54,7 @@
     "@types/node": "20.17.32",
     "drizzle-orm": "0.44.7",
     "payload": "3.76.1",
-    "typescript": "5.9.3"
+    "typescript": "^5.9.3"
   },
   "engines": {
     "node": ">=18.0.0"
