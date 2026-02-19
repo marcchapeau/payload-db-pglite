@@ -46,6 +46,8 @@
   ],
   "peerDependencies": {
     "@electric-sql/pglite": ">=0.3.0",
+    "@payloadcms/drizzle": ">=3.0.0",
+    "drizzle-orm": ">=0.43.0",
     "payload": ">=3.0.0"
   },
   "devDependencies": {
@@ -59,8 +61,5 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "dependencies": {
-    "@payloadcms/drizzle": ">=3.0.0",
-    "drizzle-orm": ">=0.43.0"
-  }
+  "dependencies": {}
 }

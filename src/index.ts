@@ -41,7 +41,6 @@ import {
 import {
   columnToCodeConverter,
   countDistinct,
-  createDatabase,
   createExtensions,
   createJSONQuery,
   defaultDrizzleSnapshot,
@@ -52,6 +51,10 @@ import {
   insert,
   requireDrizzleKit,
 } from '@payloadcms/drizzle/postgres'
+
+// PGlite manages its own database — no need for the `pg`-based createDatabase
+// from @payloadcms/drizzle/postgres. We provide a no-op to avoid pulling in `pg`.
+const createDatabase = async () => {}
 
 import { pgEnum, pgSchema, pgTable } from 'drizzle-orm/pg-core'
 import { createDatabaseAdapter, defaultBeginTransaction, findMigrationDir } from 'payload'
